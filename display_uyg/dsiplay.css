@@ -1,0 +1,206 @@
+/* CSS Document */
+
+body{
+	background-color: lightgrey;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+.navi{
+ width:100%;
+ background-color: darkred;
+ opacity: 0.80;
+}
+.navi ul{
+	list-style: none;
+	overflow: hidden;
+}
+.navi li{
+	float:left;
+	display: inline-block;
+	padding: 15px;
+}
+.navi a{
+	color: white;
+	letter-spacing: 2px;
+	padding: 15px;
+    
+	text-align: center;
+	text-decoration: none;
+}
+.navi a:hover {
+	background-color: rgb(172, 2, 2);
+	padding: 15px;
+	
+}
+section{
+
+ width: 75%;
+ float: left;
+
+
+}
+
+aside{
+
+	width: 25%;
+	float: left;
+}
+
+.box{
+ background-color: white;
+ border-radius: 4px;
+ box-shadow: 0 5px 10px rgba(131, 131, 131,.8) ;
+ margin-left: 5px;
+
+}
+
+.box img{
+ width:95%;
+ height:75%;
+ margin:5px;
+ border-radius: 3px;
+ opacity:0.95 ;
+
+}
+.box .paragraf{
+	padding: 5px;
+}
+.box img:hover{
+
+	opacity:1 ;
+	
+	box-shadow: 0 0 25px lightslategrey;
+   }
+.box header {
+ position: relative;
+ padding: 1px;
+ text-align: center;
+ text-transform: uppercase;
+ letter-spacing:3px ;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+text-shadow: 0 0 20px rgb(192, 192, 192)  ;
+
+}
+.box .tarih{
+	position: relative;
+	float: right;
+    right:49px;
+	float: top;
+	color: grey;
+	
+}
+
+.box li{
+	list-style:none ;
+	display: inline-block;
+	margin: 4px 4px 10px 4px;
+	text-transform: uppercase;
+	
+
+	
+}
+.box li a{
+    background-color: darkred;
+	border-radius:4px ;
+	padding: 2px  10px;
+	opacity:0.7 ;
+	color: white;
+    opacity: 0.9;
+	text-decoration:none;
+	text-align: center;
+}
+.box li a:hover {
+	opacity: 1;
+	box-shadow: 0 5px 10px rgba(131, 131, 131,.8) ;
+	
+}
+.box li a:hover li {
+	opacity: 1;
+		
+}
+.asider div{
+	background-color: white;
+	border-radius: 4px;
+	width: 80%;
+	padding: 10px 10px 10px 5px;
+	margin-left: 10px;
+	margin-bottom: 30px; 
+	text-align: center;
+	box-shadow: 0 5px 10px rgba(131, 131, 131,.8) ;
+	
+
+}
+
+.asider div li{
+	list-style:none ;
+	display: inline-block;
+}
+
+.mesaj i{
+	float: left;
+	border-right: 1px solid rgb(216, 213, 213);
+	padding: 3px 3px 3px 0;
+	
+	
+}
+.mesaj p{
+	float: left;
+	position: relative;
+	top :-16px;
+	padding-left: 3px;
+}
+.linkler i{
+	font-size: 30px;
+}
+.linkler li:not(.son){
+	border-right:1px solid gray ;
+	
+}
+
+.linkler a{
+	color: gray;
+	padding: 10px;
+	opacity:0.7 ;
+	margin: 10px;
+	
+    
+}
+
+.linkler a:hover{
+	opacity:1;
+	box-shadow: 0 5px 10px rgba(131, 131, 131,.4) ;
+	padding-top:20px ;
+	border-radius: 4px;
+
+}
+
+footer {
+	background-color: white;
+	border-radius: 4px;
+	bottom: 0%;
+	clear: left;
+	width:74.7% ;
+	box-shadow: 0 5px 10px rgba(131, 131, 131,.8) ;
+	margin-left: 5px;
+}
+
+
+
+footer img{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	position: relative;
+	top:20px;
+	left:10px ;
+    
+	
+}
+
+footer p{
+
+	position: relative;
+	left: 200px;
+	top: -90px;
+
+}

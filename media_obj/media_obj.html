@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        #header{
+            padding: 30px;
+            text-align: center;
+            background-color: rgb(47, 42, 124);
+            color: white;
+        }
+        #nav-bar{
+            background-color:#333 ;
+            display: flex;
+        }
+        #nav-bar a{
+            text-decoration: none;
+            color: white;
+            padding: 16px;
+            text-align: center;
+        }
+        #nav-bar a:hover{
+            color: #333;
+            background-color: cadetblue;
+        }
+        #main{
+            display: flex;
+        }
+        #sidebar{
+          flex: 25%;
+          padding: 25px;
+          background-color: #f1f1f1;
+          order: 1;
+        }
+        #content{
+          flex: 75%;
+          padding: 25px;
+        }
+        .box{
+            margin-bottom:20px ;
+
+        }
+        p{
+            padding: 10px;
+        }
+        .text{
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+            margin: 10px;
+
+        }
+        #footer{
+            text-align: center;
+            background-color: #ddd;
+            padding: 20px;
+        }
+        @media screen and (max-width:700px) {
+            #main,#nav-bar{
+                flex-direction:column ;
+            }
+            #sidebar{
+                order: -1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+  <header id="header">
+      <h1>Lorem, ipsum.</h1>
+      <p>Lorem, ipsum dolor.</p>
+  </header>
+  <nav id="nav-bar">
+     <a href="#">Link 1</a><a href="#">Link 2</a><a href="#">Link 3</a><a href="#">Link 4</a>
+  </nav>    
+  <main id="main">
+    <aside id="sidebar">
+        <div class="box">
+            <h2>Lorem, ipsum.</h2>
+            <div class="text" style="height: 200px;">
+            </div>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id excepturi quo odit provident nisi in, molestiae dolorum quis sunt sequi unde esse iste praesentium explicabo modi ea dolorem blanditiis amet!
+            </p>
+            <div class="text" style="height: 50px;"></div>
+            <div class="text" style="height: 50px;"></div>
+            <div class="text" style="height: 50px;"></div>
+        </div>
+
+    </aside>  
+    <section id="content">
+        <div class="box">
+            <h2>Lorem, ipsum.</h2>
+            <div class="text" style="height: 200px;">
+            </div>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id excepturi quo odit provident nisi in, molestiae dolorum quis sunt sequi unde esse iste praesentium explicabo modi ea dolorem blanditiis amet!
+            </p>
+        </div>
+        <div class="box">
+            <h2>Lorem, ipsum.</h2>
+            <div class="text" style="height: 200px;">
+            </div>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id excepturi quo odit provident nisi in, molestiae dolorum quis sunt sequi unde esse iste praesentium explicabo modi ea dolorem blanditiis amet!
+            </p>
+         
+            
+        </div>
+    </section>
+  </main>
+  <footer id="footer">
+    <p>Footer</p>  
+</footer>
+</body>
+</html>
